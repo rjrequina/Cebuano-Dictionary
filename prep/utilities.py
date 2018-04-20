@@ -1,5 +1,3 @@
-import sys
-import os
 
 '''
 Write contents to file
@@ -7,13 +5,6 @@ Default is per_line and mode is 'w'
 '''
 def write_file(name=None, contents=[], per_line=True, mode="w", add_newline=True, no_encode=False, append_newline=False):
     if name:
-        cwd = os.getcwd()
-        if '/src' in cwd:
-            cwd = cwd.replace('/src', '')
-        
-        name = cwd + '/' + name
-        sys.path.insert(0, name)
-
         f = open(name, mode)
         string = ""
         for content in contents:
@@ -42,13 +33,6 @@ Can specify start and end of contents in reading a file
 '''
 def read_file(name=None, start=None, end=None, strip=False, dict_format=False, decode=False):
     if name:
-        cwd = os.getcwd()
-        if '/src' in cwd:
-            cwd = cwd.replace('/src', '')
-        
-        name = cwd + '/' + name
-        sys.path.insert(0, name)
-
         f = open(name, "r")
         contents = []
         dictionary = {}
