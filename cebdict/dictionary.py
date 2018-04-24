@@ -32,8 +32,8 @@ Search term in dictionary
 def search(term=''):
 	term = term.lower()
 	if term not in dictionary:
-		term = string.replace(term, 'o', 'u')
-		term = string.replace(term, 'e', 'i')
+		term = term.replace('o', 'u')
+		term = term.replace('e', 'i')
 
 	if term not in dictionary:
 		return None
@@ -46,6 +46,6 @@ Checks if the term exists in the dictionary
 '''
 def is_entry(term=''):
 	term = term.lower()
-	term = string.replace(term, 'o', 'u')
-	term = string.replace(term, 'e', 'i')
+	term = term.replace(term, 'o', 'u')
+	term = term.replace(term, 'e', 'i')
 	return term in dictionary
