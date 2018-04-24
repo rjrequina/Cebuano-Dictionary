@@ -1,4 +1,5 @@
 import string
+import sys
 
 '''
 Write contents to file
