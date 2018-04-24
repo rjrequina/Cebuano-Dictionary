@@ -4,7 +4,7 @@ from distutils.core import setup
 setup(
   name = 'cebdict',
   packages = ['cebdict'],
-  version = '2.0',
+  version = '2.1',
   description = "A Cebuano Dictionary based on Wolff's Dictionary",
   author = 'Arjemariel Requina',
   author_email = 'rjrequina@gmail.com',
