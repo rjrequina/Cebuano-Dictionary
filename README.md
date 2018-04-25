@@ -1,9 +1,11 @@
 # Cebuano-Dictionary
 Cebuano Dictionary based on John Wolff's 'A dictionary of Cebuano Visayan'
 
+
 Number of entries |
 --- |
 16587 |
+
 
 ## Installation
 * `pip install cebdict` or
